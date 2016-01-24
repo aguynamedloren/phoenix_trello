@@ -3,7 +3,7 @@ import { Provider }       from 'react-redux';
 import { Router }         from 'react-router';
 import invariant          from 'invariant';
 import { RoutingContext } from 'react-router';
-import routerHistory      from '../routes';
+import routes             from '../routes';
 
 export default class Root extends React.Component {
   _renderRouter() {
@@ -28,6 +28,6 @@ export default class Root extends React.Component {
       <Provider store={this.props.store}>
         {this._renderRouter()}
       </Provider>
-    )
+    );
   }
 }
